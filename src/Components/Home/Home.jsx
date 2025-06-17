@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 800 });
 
-    fetch("http://localhost:3000/users")
+    fetch("https://service-server-three.vercel.app/users")
       .then(res => res.json())
       .then(data => setServices(data))
       .catch(error => console.error("Failed to fetch services:", error));

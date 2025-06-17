@@ -30,7 +30,7 @@ const SingleService = () => {
             serviceStatus: "pending",
         };
 
-        fetch("http://localhost:3000/bookings", {
+        fetch("https://service-server-three.vercel.app/bookings", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

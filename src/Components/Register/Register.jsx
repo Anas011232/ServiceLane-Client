@@ -56,7 +56,7 @@ const Register = () => {
             </nav>
             <div>
 
-                <div className="card bg-base-100 w-full mx-auto mt-20 max-w-sm shrink-0 shadow-2xl">
+                <div className="card bg-base-100 w-full mx-auto mt-20 max-w-sm shrink-0 shadow-2xl mb-10">
                     <div className="card-body">
                         <h1 className='text-2xl mx-auto font-bold'>Register Now</h1>
                         <form onSubmit={handleRegister} className="fieldset">

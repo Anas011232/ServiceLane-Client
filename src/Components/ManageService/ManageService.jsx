@@ -12,7 +12,7 @@ const ManageService = () => {
     const [posts, setPosts] = useState([])
     useEffect(() => {
     if (user && user.email) {
-        fetch(`http://localhost:3000/users?email=${user.email}`)
+        fetch(`https://service-server-three.vercel.app/users?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 

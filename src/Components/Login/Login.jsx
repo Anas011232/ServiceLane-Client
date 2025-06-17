@@ -67,7 +67,7 @@ const Login = () => {
             </nav>
 
 
-            <main className="flex-grow">
+            <main className="flex-grow mb-10">
                 <div className="flex justify-center items-center mt-14 bg-base-100 px-4">
                     <div className="card bg-base-100 w-full mx-auto mt-20 max-w-sm shrink-0 shadow-2xl">
                         <div className="card-body">

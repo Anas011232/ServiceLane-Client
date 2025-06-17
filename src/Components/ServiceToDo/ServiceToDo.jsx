@@ -9,7 +9,7 @@ const ServiceToDo = () => {
 
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:3000/bookings?providerEmail=${user.email}`)
+            fetch(`https://service-server-three.vercel.app/bookings?providerEmail=${user.email}`)
                 .then(res => res.json())
                 .then(data => {
                     const filtered = data.filter(post => post.providerEmail === user.email);
@@ -22,7 +22,7 @@ const ServiceToDo = () => {
     }, [user]);
 
     const handleStatusChange = (id, newStatus) => {
-        fetch(`http://localhost:3000/bookings/${id}`, {
+        fetch(`https://service-server-three.vercel.app/bookings/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",

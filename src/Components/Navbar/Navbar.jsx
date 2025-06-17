@@ -36,6 +36,8 @@ const Navbar = () => {
             <NavLink to="/" className="text-white hover:text-cyan-300 transition">Home</NavLink> <br />
             <NavLink to="/services" className="text-white hover:text-cyan-300 transition">Services</NavLink>
 
+            
+
             {user && (
                 <div className="relative">
                     <button
@@ -78,6 +80,8 @@ const Navbar = () => {
                             <>
                                 <NavLink to="/register" className="block text-white hover:underline">Signup</NavLink>
                                 <NavLink to="/login" className="block text-white hover:underline">Login</NavLink>
+
+                                
                             </>
                         )}
                         {user && (

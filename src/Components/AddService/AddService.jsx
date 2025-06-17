@@ -21,7 +21,7 @@ const AddService = () => {
             name:user.displayName,
         }
 
-        axios.post("http://localhost:3000/users", obj)
+        axios.post("https://service-server-three.vercel.app/users", obj)
             .then(data => {
                 console.log(data.data.insertedId)
                 {

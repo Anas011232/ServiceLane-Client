@@ -22,7 +22,7 @@ const UpdateUser = () => {
         const newUser = Object.fromEntries(formData.entries());
         
 
-        axios.put(`http://localhost:3000/updateUser/${serviceToEdit._id}`,newUser)
+        axios.put(`https://service-server-three.vercel.app/updateUser/${serviceToEdit._id}`,newUser)
             .then(data => {
                 if (data.data) {
                     

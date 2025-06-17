@@ -18,6 +18,7 @@ import SingleService from './SingleService/SingleService.jsx';
 import BookedServices from './Components/BookedServices/BookedServices.jsx';
 import ServiceToDo from './Components/ServiceToDo/ServiceToDo.jsx';
 import PrivateRoute from './Components/Context/PrivateRoute/PrivateROute.jsx';
+import NotFound from './Components/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,17 +38,17 @@ const router = createBrowserRouter([
   {
     path: "/updateUser/:id",
     element: <PrivateRoute> <UpdateUser></UpdateUser> </PrivateRoute>,
-    loader: ({ params }) => fetch(`http://localhost:3000/updateUser/${params.id}`)
+    loader: ({ params }) => fetch(`https://service-server-three.vercel.app/updateUser/${params.id}`)
   },
   {
     path: "/services",
     Component: AllServices,
-    loader: () => fetch('http://localhost:3000/users')
+    loader: () => fetch('https://service-server-three.vercel.app/users')
   },
   {
     path: "/service/:id",
     element: <PrivateRoute> <SingleService></SingleService> </PrivateRoute>,
-    loader: ({ params }) => fetch(`http://localhost:3000/service/${params.id}`)
+    loader: ({ params }) => fetch(`https://service-server-three.vercel.app/service/${params.id}`)
   },
   {
     path: "/dashboard/booked-services",
@@ -56,7 +57,11 @@ const router = createBrowserRouter([
   {
     path: "/dashboard/service-todo",
     element: <PrivateRoute> <ServiceToDo></ServiceToDo> </PrivateRoute>,
-    loader: () => fetch("http://localhost:3000/bookings")
+    loader: () => fetch("https://service-server-three.vercel.app/bookings")
+  },
+  {
+    path:"*",
+    Component: NotFound
   }
 ]);
 

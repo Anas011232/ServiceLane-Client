@@ -19,7 +19,7 @@ const MyAddedService = ({ post }) => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:3000/users/${id}`)
+        axios.delete(`https://service-server-three.vercel.app/users/${id}`)
           .then(data => {
             if (data.data) {
               Swal.fire({

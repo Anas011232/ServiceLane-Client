@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router";
+import { useLoaderData, useNavigate } from "react-router";
 import { useContext, useState } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../Components/Context/AuthContext";
@@ -9,12 +9,14 @@ const SingleService = () => {
     const service = useLoaderData();
     const { user } = useContext(AuthContext);
     const [showModal, setShowModal] = useState(false);
+      const navigate=useNavigate()
 
     const handleBooking = (e) => {
         e.preventDefault();
         const form = e.target;
         const date = form.date.value;
         const instruction = form.instruction.value;
+      
 
         const bookingInfo = {
             serviceId: service._id,
@@ -41,6 +43,7 @@ const SingleService = () => {
             .then(() => {
                 Swal.fire("Booked!", "Your service has been booked.", "success");
                 setShowModal(false);
+                navigate('/dashboard/booked-services')
             });
     };
 

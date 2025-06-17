@@ -145,7 +145,7 @@ const Home = () => {
 
         <div className="text-center mt-10">
           <Link
-            to="/allServices"
+            to="/services"
             className="inline-block bg-gradient-to-r from-purple-400 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform"
           >
             Show All

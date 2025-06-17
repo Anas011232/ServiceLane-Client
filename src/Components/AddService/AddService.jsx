@@ -4,13 +4,16 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router";
 
 
 const AddService = () => {
     const { user } = use(AuthContext)
+    const navigate=useNavigate()
 
     const handleAddService = (e) => {
         e.preventDefault();
+        
 
         const form = e.target;
         const formData = new FormData(form)
@@ -30,6 +33,8 @@ const AddService = () => {
                         icon: "success",
                         draggable: true
                     });
+                    navigate('/dashboard/manage-service')
+
                 }
             })
 

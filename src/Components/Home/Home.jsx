@@ -155,7 +155,7 @@ const Home = () => {
 
       <section className="bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100 py-20 px-4">
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-center text-[#2c5364] mb-4"
+          className="text-4xl md:text-5xl font-extrabold text-center text-purple-600 mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -181,12 +181,12 @@ const Home = () => {
             animate="visible"
             custom={1}
           >
-            <FaBed className="text-[#2c5364] text-6xl mb-6 mx-auto" />
+            <FaBed className="text-purple-500 text-6xl mb-6 mx-auto" />
             <h3 className="text-2xl font-bold text-gray-800 mb-3">Rooms for Rent</h3>
             <p className="text-gray-600 mb-6">
               Connect with verified roommates and find cozy, budget-friendly spaces.
             </p>
-            <button className="bg-[#2c5364] hover:bg-[#1d3b4b] text-white px-6 py-2 rounded-full font-medium transition-colors">
+            <button className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
               Find a Room
             </button>
           </motion.div>
@@ -199,12 +199,12 @@ const Home = () => {
             animate="visible"
             custom={2}
           >
-            <FaBuilding className="text-[#2c5364] text-6xl mb-6 mx-auto" />
+            <FaBuilding className="text-purple-500 text-6xl mb-6 mx-auto" />
             <h3 className="text-2xl font-bold text-gray-800 mb-3">Apartments for Rent</h3>
             <p className="text-gray-600 mb-6">
               Browse full apartments—ideal for individuals, couples, or families.
             </p>
-            <button className="bg-[#2c5364] hover:bg-[#1d3b4b] text-white px-6 py-2 rounded-full font-medium transition-colors">
+            <button className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
               Search Rentals
             </button>
           </motion.div>
@@ -217,12 +217,12 @@ const Home = () => {
             animate="visible"
             custom={3}
           >
-            <FaUsers className="text-[#2c5364] text-6xl mb-6 mx-auto" />
+            <FaUsers className="text-purple-500 text-6xl mb-6 mx-auto" />
             <h3 className="text-2xl font-bold text-gray-800 mb-3">Co-living Spaces</h3>
             <p className="text-gray-600 mb-6">
               Modern shared living with flexible terms and built-in community.
             </p>
-            <button className="bg-[#2c5364] hover:bg-[#1d3b4b] text-white px-6 py-2 rounded-full font-medium transition-colors">
+            <button className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
               Explore Co-living
             </button>
           </motion.div>
@@ -232,36 +232,36 @@ const Home = () => {
 
 
       {/* FAQ Section */}
-     <div className="space-y-4 px-4 sm:px-8 md:px-16 lg:px-24 py-8">
-  {[
-    {
-      q: 'How can I book a service on ServiceLane?',
-      a: 'Simply browse the available services, click on your desired provider, and use the "Book Now" button to schedule your service.'
-    },
-    {
-      q: 'Is it free to list my service on ServiceLane?',
-      a: 'Yes, listing your service is completely free. You can create a provider profile, showcase your expertise, and attract clients.'
-    },
-    {
-      q: 'Can I contact service providers directly?',
-      a: 'Yes! Once logged in, you can message service providers directly through our secure platform to discuss details or ask questions.'
-    },
-    {
-      q: 'What safety features does ServiceLane offer?',
-      a: 'We verify user emails, allow reviews after bookings, and encourage communication within our platform to ensure a trusted environment.'
-    },
-    {
-      q: 'How do I manage or remove my listed service?',
-      a: 'Head to your dashboard, select your service from the list, and choose "Edit" or "Delete" as needed.'
-    }
-  ].map((item, index) => (
-    <div key={index} className="collapse bg-base-100 border border-base-300">
-      <input type="radio" name="faq-accordion" defaultChecked={index === 0} />
-      <div className="collapse-title font-semibold text-base sm:text-lg">{item.q}</div>
-      <div className="collapse-content text-sm sm:text-base">{item.a}</div>
-    </div>
-  ))}
-</div>
+      <div className="space-y-4 px-4 sm:px-8 md:px-16 lg:px-24 py-8">
+        {[
+          {
+            q: 'How can I book a service on ServiceLane?',
+            a: 'Simply browse the available services, click on your desired provider, and use the "Book Now" button to schedule your service.'
+          },
+          {
+            q: 'Is it free to list my service on ServiceLane?',
+            a: 'Yes, listing your service is completely free. You can create a provider profile, showcase your expertise, and attract clients.'
+          },
+          {
+            q: 'Can I contact service providers directly?',
+            a: 'Yes! Once logged in, you can message service providers directly through our secure platform to discuss details or ask questions.'
+          },
+          {
+            q: 'What safety features does ServiceLane offer?',
+            a: 'We verify user emails, allow reviews after bookings, and encourage communication within our platform to ensure a trusted environment.'
+          },
+          {
+            q: 'How do I manage or remove my listed service?',
+            a: 'Head to your dashboard, select your service from the list, and choose "Edit" or "Delete" as needed.'
+          }
+        ].map((item, index) => (
+          <div key={index} className="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="faq-accordion" defaultChecked={index === 0} />
+            <div className="collapse-title font-semibold text-base sm:text-lg">{item.q}</div>
+            <div className="collapse-content text-sm sm:text-base">{item.a}</div>
+          </div>
+        ))}
+      </div>
 
     </div>
   );

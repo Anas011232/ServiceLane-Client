@@ -10,3 +10,17 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## ServEase - Service Sharing Platform
+
+🔧 A modern platform to share, manage, and book services across various categories.
+
+### 🌟 Key Features:
+- 🔐 Firebase Authentication with Email/Password & Google
+- 📋 Users can Add, Update, Delete, and Manage their own services
+- 📦 Book any service and track status (Pending, Working, Completed)
+- 🔄 Dynamic Dashboard with conditional access and route protection
+- 💻 Fully responsive for Mobile, Tablet, and Desktop devices
+
+🔗 Live Website: https://servease.web.app  
+🔗 Server: https://servease-server.vercel.app  

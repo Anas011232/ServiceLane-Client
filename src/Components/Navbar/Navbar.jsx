@@ -1,8 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router';
 
-import { BiLogoFlutter } from 'react-icons/bi';
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaServicestack } from 'react-icons/fa';
 import { AuthContext } from '../Context/AuthContext';
 
 
@@ -69,8 +68,8 @@ const Navbar = () => {
                 >
                     ☰
                 </button>
-                <BiLogoFlutter className="text-white" size={28} />
-                <span className="text-white font-bold text-xl">Roomies</span>
+                <FaServicestack className="text-white" size={28} />
+                <span className="text-white font-bold text-xl">ServiceLane</span>
 
                 {mobileNavOpen && (
                     <div className="absolute top-full left-0 mt-2 w-48 bg-gradient-to-br from-indigo-800 via-purple-800 to-fuchsia-700 rounded-md shadow-lg z-50 p-3 space-y-2">

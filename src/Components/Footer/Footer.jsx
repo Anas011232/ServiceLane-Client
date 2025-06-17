@@ -1,6 +1,6 @@
 import React from 'react';
-import { BiLogoFlutter } from 'react-icons/bi';
-import { FaTwitter, FaYoutube, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
+import { FaTwitter, FaYoutube, FaFacebookF, FaInstagram, FaLinkedinIn, FaServicestack } from 'react-icons/fa';
 
 const Footer = () => (
   <footer className="bg-gradient-to-r from-indigo-900 via-purple-900 to-fuchsia-900 text-white pt-10">
@@ -9,8 +9,8 @@ const Footer = () => (
       {/* Branding */}
       <div>
         <div className="flex items-center gap-2 mb-3">
-          <BiLogoFlutter size={28} />
-          <span className="font-bold text-2xl tracking-wide">Roomies</span>
+          <FaServicestack className="text-white" size={28}/>
+          <span className="font-bold text-2xl tracking-wide">ServiceLane</span>
         </div>
         <p className="text-sm text-gray-300">
           Find your perfect roommate with Roomies. We make living better.

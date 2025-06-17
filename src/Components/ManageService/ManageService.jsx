@@ -27,11 +27,11 @@ const ManageService = () => {
 
     
     return (
-        <div>
-            <div>
+        <div className='min-h-screen flex flex-col'>
+            
                 <Navbar></Navbar>
-            </div>
-            <div className='p-5 px-3 space-y-5 bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100 '>
+            
+            <div className='p-5 px-3 flex-grow space-y-5 bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100 '>
                 {
                         posts.length > 0 ? (
                             posts.map(post => <MyAddedService post={post} key={post._id}></MyAddedService>)

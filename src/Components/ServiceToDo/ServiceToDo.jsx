@@ -39,12 +39,12 @@ const ServiceToDo = () => {
     };
 
     return (
-        <div>
+        <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100">
             <Navbar />
-            <div className="max-w-6xl mx-auto px-4 py-10">
+            <div className="max-w-6xl mx-auto px-4 py-10 flex-grow ">
                 <h2 className="text-3xl font-bold text-center text-purple-700 mb-10">Service To Do</h2>
                 {services.length === 0 ? (
-                    <p className="text-center text-gray-600">আপনার কোনো কাজের জন্য বুক করা সার্ভিস নেই।</p>
+                    <p className="text-center text-gray-600">No service to do.</p>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {services.map(service => (

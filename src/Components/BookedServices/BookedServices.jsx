@@ -27,9 +27,9 @@ const BookedServices = () => {
 //   if (loading) return <p className="text-center mt-10">Loading...</p>;
 
   return (
-    <div>
+    <div className='min-h-screen flex flex-col '>
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-sky-50 via-purple-50 to-pink-50 p-6">
+      <div className="min-h-screen flex-grow bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100 p-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-purple-800 mb-8">
             My Booked Services

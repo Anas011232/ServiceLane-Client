@@ -18,6 +18,7 @@ const AddService = () => {
         const obj={
             ...data,
             email:user.email,
+            name:user.displayName,
         }
 
         axios.post("http://localhost:3000/users", obj)

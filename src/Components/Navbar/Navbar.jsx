@@ -5,9 +5,13 @@ import { BiLogoFlutter } from 'react-icons/bi';
 import { FaChevronDown } from 'react-icons/fa';
 import { AuthContext } from '../Context/AuthContext';
 
+
+
 const Navbar = () => {
     const navigate = useNavigate();
     const { user, signOutUser } = useContext(AuthContext);
+
+    
 
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
     const [dashboardOpen, setDashboardOpen] = useState(false);
@@ -30,7 +34,7 @@ const Navbar = () => {
 
     const renderNavLinks = () => (
         <>
-            <NavLink to="/" className="text-white hover:text-cyan-300 transition">Home</NavLink>
+            <NavLink to="/" className="text-white hover:text-cyan-300 transition">Home</NavLink> <br />
             <NavLink to="/services" className="text-white hover:text-cyan-300 transition">Services</NavLink>
 
             {user && (

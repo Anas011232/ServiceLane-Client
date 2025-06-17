@@ -13,6 +13,10 @@ import AuthProvider from './Components/Context/AuthProvider.jsx';
 import AddService from './Components/AddService/AddService.jsx';
 import ManageService from './Components/ManageService/ManageService.jsx';
 import UpdateUser from './Components/UpdateUser/UpdateUser.jsx';
+import AllServices from './Components/AllServices/AllServices.jsx';
+import SingleService from './SingleService/SingleService.jsx';
+import BookedServices from './Components/BookedServices/BookedServices.jsx';
+import ServiceToDo from './Components/ServiceToDo/ServiceToDo.jsx';
 
 const router = createBrowserRouter([
     {
@@ -33,6 +37,25 @@ const router = createBrowserRouter([
     path:"/updateUser/:id",
     Component:UpdateUser,
     loader:({params})=>fetch(`http://localhost:3000/updateUser/${params.id}`)
+  },
+  {
+    path:"/services",
+    Component:AllServices,
+    loader:()=>fetch('http://localhost:3000/users')
+  },
+  {
+    path:"/service/:id",
+    Component:SingleService,
+    loader:({params})=>fetch(`http://localhost:3000/service/${params.id}`)
+  },
+  {
+    path:"/dashboard/booked-services",
+    Component:BookedServices
+  },
+  {
+    path:"/dashboard/service-todo",
+    Component:ServiceToDo,
+    loader:()=>fetch("http://localhost:3000/bookings")
   }
 ]);
 

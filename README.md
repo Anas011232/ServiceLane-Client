@@ -1,7 +1,5 @@
 # 🛠️ Service Sharing Web Application
 
-Live Site Link : https://aeleven-66e92.web.app
-
 A full-stack web application where users can browse, book, and manage various services.  
 Includes authentication, dynamic routing, and responsive design.
 
@@ -56,7 +54,7 @@ Includes authentication, dynamic routing, and responsive design.
 
 ## 📸 Preview
 
-(Add your project screenshots or live demo link here)
+Live Site Link : https://aeleven-66e92.web.app
 
 ---
 

@@ -1,26 +1,71 @@
-# React + Vite
+# 🛠️ Service Sharing Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Site Link : https://aeleven-66e92.web.app
 
-Currently, two official plugins are available:
+A full-stack web application where users can browse, book, and manage various services.  
+Includes authentication, dynamic routing, and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Main Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔐 Authentication
+- User Signup & Login using **Firebase Authentication**
+- **Google Login** support
+- **Protected Routes**: Only logged-in users can access private pages
 
-## ServEase - Service Sharing Platform
+### 🧰 Service Management
+- Add, Edit, and Delete Services (Full **CRUD** operations)
+- Dynamic Service Details Page
+- Book Services and view all bookings easily
 
-🔧 A modern platform to share, manage, and book services across various categories.
+### 🧑‍💼 Service Provider Dashboard
+- View all booked services
+- Update service status (Pending, Ongoing, Completed)
 
-### 🌟 Key Features:
-- 🔐 Firebase Authentication with Email/Password & Google
-- 📋 Users can Add, Update, Delete, and Manage their own services
-- 📦 Book any service and track status (Pending, Working, Completed)
-- 🔄 Dynamic Dashboard with conditional access and route protection
-- 💻 Fully responsive for Mobile, Tablet, and Desktop devices
+### 💾 Data Storage
+- Integrated with **MongoDB** via **Express & Node.js**
+- Stores user, service, and booking data securely
 
-🔗 Live Website: https://servease.web.app  
-🔗 Server: https://servease-server.vercel.app  
+### 💻 Frontend
+- Built with **React + Vite + Tailwind CSS + DaisyUI**
+- **Responsive** and **Modern UI Design**
+- Gradient Buttons, Hover Animations, and Clean Layout
+
+### 🔄 Routing
+- **React Router v6** for seamless navigation
+- Dynamic and Private Route protection
+
+### ☁️ Deployment
+- **Frontend**: Firebase Hosting  
+- **Backend**: Vercel / Render Deployment
+
+---
+
+## 🧠 Technologies Used
+
+| Category  | Technologies   |
+|-----------|---------------|
+| Frontend  | React, Vite, Tailwind CSS, DaisyUI |
+| Backend   | Node.js, Express.js |
+| Database  | MongoDB |
+| Auth      | Firebase Authentication |
+| Hosting   | Firebase, Vercel |
+
+---
+
+## 📸 Preview
+
+(Add your project screenshots or live demo link here)
+
+---
+
+## 💬 Author
+
+**Anas Bin Rafiq**  
+📧 [rafiqanas43@gmail.com]  
+🔗 [My Portfolio : https://melodious-pothos-1b9121.netlify.app/]
+
+---
+
+⭐ *If you like this project, don’t forget to star the repository!*

@@ -25,6 +25,7 @@ const ServiceToDo = () => {
         fetch(`https://service-server-three.vercel.app/bookings/${id}`, {
             method: "PATCH",
             headers: {
+                authorization:`Bearer ${user.accessToken}`,
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ serviceStatus: newStatus }),

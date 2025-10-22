@@ -11,7 +11,11 @@ const BookedServices = () => {
       
     useEffect(() => {
     if (user && user.email) {
-        fetch(`https://service-server-three.vercel.app/bookings?userEmail=${user.email}`)
+        fetch(`https://service-server-three.vercel.app/bookings?userEmail=${user.email}`,{
+          headers:{
+            authorization:`Bearer ${user.accessToken}`
+          }
+        })
             .then(res => res.json())
             .then(data => {
                 

@@ -1,12 +1,14 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+
 import { FaMapMarkerAlt, FaMoneyBillWave } from 'react-icons/fa';
 import { Link } from 'react-router'; // ✅ Fixed from 'react-router'
 import Swal from 'sweetalert2';
 
 const MyAddedService = ({ post }) => {
   const { _id, image, name, price, area, description, email } = post;
-  const [visible, setVisible] = useState(true);
+  
+  
+
 
   const handleUserDelete = (id) => {
     Swal.fire({
@@ -27,14 +29,13 @@ const MyAddedService = ({ post }) => {
                 text: "Your service has been removed successfully.",
                 icon: "success"
               });
-              setVisible(false);
+             
             }
           });
       }
     });
   };
 
-  if (!visible) return null;
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-6">
